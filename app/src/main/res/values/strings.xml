@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Delicious Point</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_log_in">log_in</string>
+    <string name="title_activity_sign__in">Sign_In</string>
+    <string name="title_activity_reviews">Reviews</string>
+    <string name="title_activity_recipes">Recipes</string>
+    <string name="title_activity_food__menu">Food_Menu</string>
+    <string name="title_activity_food__detail">Food_Detail</string>
+    <string name="title_activity_deserts">Deserts</string>
+    <string name="title_activity_beverages">beverages</string>
+</resources>

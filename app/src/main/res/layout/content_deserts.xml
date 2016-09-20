@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.amresh.deliciouspoint.Deserts"
+    tools:showIn="@layout/activity_deserts"
+    android:orientation="vertical">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Easter dessert"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20dp"
+        android:focusable="false"
+        android:textStyle="bold"
+        android:id="@+id/editText1" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/easter_dessert"
+                android:id="@+id/imageView2" />
+
+            <EditText
+
+                android:text="100.00"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:paddingLeft="10dp"
+                android:id="@+id/editText7" />
+
+        </LinearLayout>>
+
+        <EditText
+
+            android:text="A collection of bunny bakes, hot cross cheesecakes and other spring favourites"
+            android:layout_width="250dp"
+            android:layout_height="110dp"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:paddingLeft="10dp"
+            android:id="@+id/editText2" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/checkBox" />
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Festive dessert"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20dp"
+        android:focusable="false"
+        android:textStyle="bold"
+        android:id="@+id/editText3" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/festive_dessert"
+                android:id="@+id/imageView3" />
+
+            <EditText
+
+                android:text="100.00"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:paddingLeft="10dp"
+                android:id="@+id/editText8" />
+
+        </LinearLayout>>
+
+
+
+        <EditText
+
+            android:text="Sweet treats for the Christmas season, including puddings, pies, trifle and cheesecake."
+            android:layout_width="250dp"
+            android:layout_height="110dp"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:paddingLeft="10dp"
+            android:id="@+id/editText4" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/checkBox2" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Summer dessert"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20dp"
+        android:focusable="false"
+        android:textStyle="bold"
+        android:id="@+id/editText5" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/summer_desert"
+                android:id="@+id/imageView4" />
+
+            <EditText
+
+                android:text="100.00"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:paddingLeft="10dp"
+                android:id="@+id/editText9" />
+
+        </LinearLayout>
+
+
+        <EditText
+
+            android:text="Smart tarts to fruity treats for every occasion."
+            android:layout_width="250dp"
+            android:layout_height="110dp"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:paddingLeft="10dp"
+            android:id="@+id/editText6" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/checkBox3" />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
