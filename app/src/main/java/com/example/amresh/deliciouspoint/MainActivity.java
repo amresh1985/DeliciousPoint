@@ -111,4 +111,13 @@ public class MainActivity extends AppCompatActivity {
         }
         startActivity(intent);
     }
+
+    public void SignOut(MenuItem item) {
+        login = "0";
+        finish();
+        Intent intent = new Intent(this, MainActivity.class);
+
+        startActivity(intent);
+
+    }
 }

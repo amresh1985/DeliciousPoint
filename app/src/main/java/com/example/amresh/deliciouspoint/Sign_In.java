@@ -45,7 +45,7 @@ public class Sign_In extends AppCompatActivity {
                 Intent intent = new Intent(this, MainActivity.class);
                 intent.putExtra("login", "1");
                 startActivity(intent);
-
+                finish();
             }
 
         } else {
