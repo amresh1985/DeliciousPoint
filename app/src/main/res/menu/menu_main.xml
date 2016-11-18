@@ -3,8 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.amresh.deliciouspoint.MainActivity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_MyCart"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="MyCart"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_Home"
+        android:orderInCategory="101"
+        android:title="Home"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_SignOut"
+        android:orderInCategory="102"
+        android:title="SignOut"
         app:showAsAction="never" />
 </menu>

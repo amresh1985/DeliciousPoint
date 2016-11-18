@@ -25,6 +25,24 @@ public class Recipes extends AppCompatActivity {
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        String login = "0";
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            login = extras.getString("login");
+            //The key argument here must match that used in the other activity
+        }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();  // Always call the superclass method first
+        String login = "0";
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            login = extras.getString("login");
+            //The key argument here must match that used in the other activity
+        }
+
     }
 
 }

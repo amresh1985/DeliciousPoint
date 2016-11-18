@@ -4,87 +4,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.amresh.deliciouspoint.Food_Detail"
-    tools:showIn="@layout/activity_food__detail"
-    android:orientation="vertical">
+    tools:showIn="@layout/activity_food__detail">
 
 
     <EditText
+        android:id="@+id/editText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:fontFamily="sans-serif-condensed"
         android:text="Hot 'n' spicy roasted red pepper n tomato soup"
-        android:background="@android:color/transparent"
-        android:fontFamily="sans-serif-condensed"
         android:textSize="20dp"
-        android:focusable="false"
-        android:textStyle="bold"
-        android:id="@+id/editText1" />
+        android:textStyle="bold" />
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:color/transparent">
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:orientation="vertical">
             <ImageView
+                android:id="@+id/imageView2"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/hot_n_spicy_red_pepper_and_tomato_soup"
-                android:id="@+id/imageView2" />
+                android:src="@drawable/hot_n_spicy_red_pepper_and_tomato_soup" />
 
             <EditText
 
-                android:text="100.00"
+                android:id="@+id/editText7"
                 android:layout_width="100dp"
                 android:layout_height="20dp"
                 android:background="@android:color/transparent"
                 android:focusable="false"
                 android:paddingLeft="10dp"
-                android:id="@+id/editText7" />
+                android:text="100.00" />
 
         </LinearLayout>>
 
         <EditText
 
-            android:text="Whizz up this warming and vibrant soup in 10 minutes for a filling veggie supper, rich in vitamin C"
+            android:id="@+id/editText2"
             android:layout_width="250dp"
             android:layout_height="110dp"
             android:background="@android:color/transparent"
             android:focusable="false"
             android:paddingLeft="10dp"
-            android:id="@+id/editText2" />
+            android:text="Whizz up this warming and vibrant soup in 10 minutes for a filling veggie supper, rich in vitamin C" />
 
         <CheckBox
+            android:id="@+id/checkBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
-            android:id="@+id/checkBox" />
+            android:onClick="onCheckboxClicked"
+            android:text="" />
     </LinearLayout>
 
 
     <EditText
+        android:id="@+id/editText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:fontFamily="sans-serif-condensed"
         android:text="Carrot n ginger immune-boosting soup"
-        android:background="@android:color/transparent"
-        android:fontFamily="sans-serif-condensed"
         android:textSize="20dp"
-        android:focusable="false"
-        android:textStyle="bold"
-        android:id="@+id/editText3" />
+        android:textStyle="bold" />
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:color/transparent">
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
 
 
         <LinearLayout
@@ -93,20 +94,20 @@
             android:background="@android:color/transparent"
             android:orientation="vertical">
             <ImageView
+                android:id="@+id/imageView3"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/carrot_soup"
-                android:id="@+id/imageView3" />
+                android:src="@drawable/carrot_soup" />
 
             <EditText
 
-                android:text="100.00"
+                android:id="@+id/editText8"
                 android:layout_width="100dp"
                 android:layout_height="20dp"
                 android:background="@android:color/transparent"
                 android:focusable="false"
                 android:paddingLeft="10dp"
-                android:id="@+id/editText8" />
+                android:text="100.00" />
 
         </LinearLayout>>
 
@@ -114,36 +115,37 @@
 
         <EditText
 
-            android:text="Give yourself a boost and treat yourself to this low-fat, healthy carrot soup with a swirl of soured cream."
+            android:id="@+id/editText4"
             android:layout_width="250dp"
             android:layout_height="110dp"
             android:background="@android:color/transparent"
             android:focusable="false"
             android:paddingLeft="10dp"
-            android:id="@+id/editText4" />
+            android:text="Give yourself a boost and treat yourself to this low-fat, healthy carrot soup with a swirl of soured cream." />
 
         <CheckBox
+            android:id="@+id/checkBox2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
-            android:id="@+id/checkBox2" />
+            android:onClick="onCheckboxClicked"
+            android:text="" />
     </LinearLayout>
 
     <EditText
+        android:id="@+id/editText5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Spinach n watercress soup"
         android:background="@android:color/transparent"
-        android:fontFamily="sans-serif-condensed"
-        android:textSize="20dp"
         android:focusable="false"
-        android:textStyle="bold"
-        android:id="@+id/editText5" />
+        android:fontFamily="sans-serif-condensed"
+        android:text="Spinach n watercress soup"
+        android:textSize="20dp"
+        android:textStyle="bold" />
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:color/transparent">
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -151,39 +153,40 @@
             android:background="@android:color/transparent"
             android:orientation="vertical">
             <ImageView
+                android:id="@+id/imageView4"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/spinach_and_watercress_soup"
-                android:id="@+id/imageView4" />
+                android:src="@drawable/spinach_and_watercress_soup" />
 
             <EditText
 
-                android:text="100.00"
+                android:id="@+id/editText9"
                 android:layout_width="100dp"
                 android:layout_height="20dp"
                 android:background="@android:color/transparent"
                 android:focusable="false"
                 android:paddingLeft="10dp"
-                android:id="@+id/editText9" />
+                android:text="100.00" />
 
         </LinearLayout>>
 
 
         <EditText
 
-            android:text="Go veggie, go green and go filling! This simple and vibrant soup is healthy."
+            android:id="@+id/editText6"
             android:layout_width="250dp"
             android:layout_height="110dp"
             android:background="@android:color/transparent"
             android:focusable="false"
             android:paddingLeft="10dp"
-            android:id="@+id/editText6" />
+            android:text="Go veggie, go green and go filling! This simple and vibrant soup is healthy." />
 
         <CheckBox
+            android:id="@+id/checkBox3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
-            android:id="@+id/checkBox3" />
+            android:onClick="onCheckboxClicked"
+            android:text="" />
     </LinearLayout>
 
 </LinearLayout>
