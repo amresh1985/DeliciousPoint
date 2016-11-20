@@ -35,7 +35,6 @@ public class Food_Menu extends AppCompatActivity {
         }
     }
 
-
     @Override
     public void onResume() {
         super.onResume();  // Always call the superclass method first

@@ -1,11 +1,14 @@
 package com.example.amresh.deliciouspoint;
 
+import android.app.Notification;
+import android.app.NotificationManager;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.NotificationCompat;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.CheckBox;
@@ -58,6 +61,18 @@ public class beverages extends AppCompatActivity {
         }
 
         if (login.equals("1")) {
+            NotificationCompat.Builder mBuilder =
+                    (NotificationCompat.Builder) new NotificationCompat.Builder(this)
+                            .setSmallIcon(R.drawable.carrot_soup)
+                            .setContentTitle("DeliciousPoint")
+                            .setContentText("Items Added in Cart : " + login);
+
+            int mNotificationId = 001;
+// Gets an instance of the NotificationManager service
+            NotificationManager mNotifyMgr =
+                    (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+// Builds the notification and issues it.
+            mNotifyMgr.notify(mNotificationId, mBuilder.build());
 
 
         } else {
@@ -78,5 +93,14 @@ public class beverages extends AppCompatActivity {
 
 
         }
+    }
+
+    public void createNotification(View view) {
+        NotificationCompat.Builder mBuilder =
+                (NotificationCompat.Builder) new NotificationCompat.Builder(this)
+                        .setSmallIcon(R.drawable.carrot_soup)
+                        .setContentTitle("My notification")
+                        .setContentText("Hello World!");
+
     }
 }
